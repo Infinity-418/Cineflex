@@ -2,6 +2,27 @@
 
 This repository contains my submission for the CULT Open Projects 2026 (IIT Roorkee). I built a movie recommendation engine using the Netflix Prize dataset, implementing and comparing Matrix Factorization (SVD) and User-Based Collaborative Filtering (KNN). 
 
+## 🎬 About Cineflex
+**Cineflex** is a premium, interactive web application built with Streamlit that serves as a movie recommendation engine. It bridges recommendation systems theory with a polished, streaming-like user interface. 
+
+### 🚀 Key Features
+- **Interactive Recommendation Dashboard**: Browse through the top active database subscribers and view SVD recommendations vs User-Based Collaborative Filtering recommendations.
+- **Real-time Onboarding (Cold-Start Quiz)**: Select your favorite genres and rate popular movies. The backend projects these ratings directly into the SVD latent factor space to yield immediate, personalized recommendations.
+- **Explainable AI (XAI)**: Includes neighbor-lookup tracing for User-Based KNN, showing *why* a movie is recommended (i.e. highlighting similar users' ratings).
+- **Movie Similarity Explorer**: Explore and rank movie relationships by calculating the cosine similarity of their 100-dimensional SVD item vectors.
+- **Interactive EDA Tab**: Explore dataset insights (distributions, power-law curves, and matrix sparsity heatmaps) dynamically.
+
+### 🎥 App Demonstration & Screenshot
+Here is a screenshot of the Cineflex dashboard interface:
+
+![Cineflex Dashboard Screenshot](cineflex_screenshot.png)
+
+Check out the interactive demo in action:
+
+<video src="cineflex_demo.mp4" width="100%" controls alt="Cineflex Demo Video"></video>
+
+---
+
 ###  Personal Context & Struggles
 - **Dataset Size & Timeouts**: The raw Netflix dataset is huge (~2GB). I initially tried downloading it programmatically inside the notebooks, but `gdown` kept timing out or getting blocked by Google Drive's large-file warnings. I solved this by pre-downloading the archive files and creating a preprocessing script to clean and filter them locally.
 - **Model Training Speeds**: Training KNN on my machine was a massive pain — it took over 3 minutes to compute the cosine similarities and use them. Matrix Factorization (SVD) was a lifesaver, fitting in just 2 seconds while giving much better recommendations.

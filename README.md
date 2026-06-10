@@ -1,14 +1,14 @@
-# Cineflex — a movie recommender I built for the CULT Open Projects
+# Cineflex — a movie recommender 
 
 This repository contains my submission for the CULT Open Projects 2026 (IIT Roorkee). I built a movie recommendation engine using the Netflix Prize dataset, implementing and comparing Matrix Factorization (SVD) and User-Based Collaborative Filtering (KNN). 
 
-### 💡 Personal Context & Struggles
+###  Personal Context & Struggles
 - **Dataset Size & Timeouts**: The raw Netflix dataset is huge (~2GB). I initially tried downloading it programmatically inside the notebooks, but `gdown` kept timing out or getting blocked by Google Drive's large-file warnings. I solved this by pre-downloading the archive files and creating a preprocessing script to clean and filter them locally.
 - **Model Training Speeds**: Training KNN on my machine was a massive pain — it took over 3 minutes to compute the cosine similarities and use them. Matrix Factorization (SVD) was a lifesaver, fitting in just 2 seconds while giving much better recommendations.
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 *   `dashboard.py` — Streamlit app to explore recommendations and model stats interactively.
 *   `data/`
@@ -28,7 +28,7 @@ This repository contains my submission for the CULT Open Projects 2026 (IIT Roor
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### 1. Install dependencies
 Set up a virtual environment and install the required packages:
@@ -55,7 +55,7 @@ python3 models/train.py
 ```
 
 ### 5. Run evaluation
-⚠️ **Run this before the dashboard or it'll crash!** The dashboard expects `models/results.joblib` to load. If it's not there, the dashboard will fail or fall back to static values.
+ **Run this before the dashboard or it'll crash!** The dashboard expects `models/results.joblib` to load. If it's not there, the dashboard will fail or fall back to static values.
 ```bash
 python3 evaluate/evaluate.py
 ```
@@ -68,7 +68,7 @@ streamlit run dashboard.py
 
 ---
 
-## 📊 Summary Results
+##  Summary Results
 
 *   **SVD Model**: RMSE = **0.9307** | MAP@10 = **73.59%** | Train Time = **2.01s** | Prediction Time = **1.29s**
 *   **User-Based KNN**: RMSE = **0.9838** | MAP@10 = **70.67%** | Train Time = **220.55s** | Prediction Time = **93.50s**

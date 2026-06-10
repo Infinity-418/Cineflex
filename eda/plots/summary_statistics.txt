@@ -1,6 +1,0 @@
-Total Ratings: 425046
-Unique Users: 15455
-Unique Movies: 361
-Mean Rating: 3.4600
-Sparsity: 92.3817%
-Top 100 Movies Rating Share: 90.57%

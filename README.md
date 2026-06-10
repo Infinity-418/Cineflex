@@ -22,6 +22,8 @@ Check out the interactive demo in action:
 <video src="cineflex_demo.mp4" width="100%" controls alt="Cineflex Demo Video"></video>
 
 ---
+Model files aren't committed due to size. Run python3 models/train.py to generate them locally
+___
 
 ###  Personal Context & Struggles
 - **Dataset Size & Timeouts**: The raw Netflix dataset is huge (~2GB). I initially tried downloading it programmatically inside the notebooks, but `gdown` kept timing out or getting blocked by Google Drive's large-file warnings. I solved this by pre-downloading the archive files and creating a preprocessing script to clean and filter them locally.

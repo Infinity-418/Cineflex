@@ -2,17 +2,17 @@
 
 This repository contains my submission for the CULT Open Projects 2026 (IIT Roorkee). I built a movie recommendation engine using the Netflix Prize dataset, implementing and comparing Matrix Factorization (SVD) and User-Based Collaborative Filtering (KNN). 
 
-## 🎬 About Cineflex
-**Cineflex** is a premium, interactive web application built with Streamlit that serves as a movie recommendation engine. It bridges recommendation systems theory with a polished, streaming-like user interface. 
+##  About Cineflex
+**Cineflex** is a interactive web application built with Streamlit that serves as a movie recommendation engine. It bridges recommendation systems theory with a polished, streaming-like user interface. 
 
-### 🚀 Key Features
+###  Key Features
 - **Interactive Recommendation Dashboard**: Browse through the top active database subscribers and view SVD recommendations vs User-Based Collaborative Filtering recommendations.
 - **Real-time Onboarding (Cold-Start Quiz)**: Select your favorite genres and rate popular movies. The backend projects these ratings directly into the SVD latent factor space to yield immediate, personalized recommendations.
 - **Explainable AI (XAI)**: Includes neighbor-lookup tracing for User-Based KNN, showing *why* a movie is recommended (i.e. highlighting similar users' ratings).
 - **Movie Similarity Explorer**: Explore and rank movie relationships by calculating the cosine similarity of their 100-dimensional SVD item vectors.
 - **Interactive EDA Tab**: Explore dataset insights (distributions, power-law curves, and matrix sparsity heatmaps) dynamically.
 
-### 🎥 App Demonstration & Screenshot
+###  App Demonstration & Screenshot
 Here is a screenshot of the Cineflex dashboard interface:
 
 ![Cineflex Dashboard Screenshot](cineflex_screenshot.png)
